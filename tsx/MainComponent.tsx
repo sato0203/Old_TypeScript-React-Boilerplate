@@ -29,7 +29,7 @@ export default class MainComponent extends React.Component<MainComponentProps,Ma
     //初期化
     componentWillMount(){
         //Modelの起動
-        this.state.firstPageModel = new FirstPageModel(this.controller2Model);
+        this.state.firstPageModel = new FirstPageModel(this.mainComponentToModel);
 
         //最初のページを指定
         this.changePage(PageState.First);
@@ -39,9 +39,9 @@ export default class MainComponent extends React.Component<MainComponentProps,Ma
         return this.state.curPage.render();
     }
 
-    //contoller2Modelの設定
+    //mainComponentToModelの設定
 
-    private get controller2Model(){
+    private get mainComponentToModel(){
         return {
             changePage : this.changePage,
             updateState : this.updateState
