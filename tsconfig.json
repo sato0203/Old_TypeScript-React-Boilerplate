@@ -3,8 +3,5 @@
     "target": "es6",
     "module": "umd",
     "jsx": "react"
-  },
-  "include": [
-    "tsx/**/*"
-  ]
+  }
 }
