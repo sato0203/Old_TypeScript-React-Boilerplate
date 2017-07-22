@@ -1,4 +1,4 @@
-# TypeScript-React-Boiler-Plate
+# TypeScript-React-Boilerplate
 
 ## 設計概要
 
