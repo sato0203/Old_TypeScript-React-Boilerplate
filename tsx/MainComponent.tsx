@@ -14,14 +14,13 @@ class MainComponentState{
     pafeState:PageState
 }
 
+export class MainComponentToModel{
+    updateState:() => void;
+    changePage:(pageState:PageState) => void;
+}
 
 export default class MainComponent extends React.Component<MainComponentProps,MainComponentState> {
     public state:MainComponentState = new MainComponentState();
-    public modelInit = ():void =>
-    {
-        this.state.firstPageModel = new FirstPageModel(this.controller2Model);
-    }
-
     constructor(public props:MainComponentProps)
     {
         super(props);
