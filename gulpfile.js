@@ -53,5 +53,5 @@ gulp.task('webserver', function() {
   );
 });
 
-gulp.task('default', function(callback){runSequence('react-compile','uglify',callback)});
+gulp.task('default', function(callback){runSequence('react-compile',callback)});
 gulp.task('develop', ['react-compile','watch','webserver']);
