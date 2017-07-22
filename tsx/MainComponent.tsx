@@ -11,7 +11,7 @@ class MainComponentProps{
 class MainComponentState{
     firstPageModel:FirstPageModel
     curPage:PageView
-    pafeState:PageState
+    pageState:PageState
 }
 
 export class MainComponentToModel{
@@ -51,7 +51,7 @@ export default class MainComponent extends React.Component<MainComponentProps,Ma
     //PageStateに応じたViewが起動
     public changePage = (pageState:PageState):void =>
     {
-        this.state.pafeState = pageState;
+        this.state.pageState = pageState;
         switch(pageState)
         {
             case PageState.First:
